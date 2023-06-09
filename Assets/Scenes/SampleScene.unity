@@ -1519,7 +1519,7 @@ Transform:
   m_LocalScale: {x: 0.4482, y: 0.36616072, z: 1}
   m_Children: []
   m_Father: {fileID: 866303236}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &203034179
 MonoBehaviour:
@@ -2026,7 +2026,7 @@ Transform:
   m_LocalScale: {x: 0.43777117, y: 0.36216044, z: 1}
   m_Children: []
   m_Father: {fileID: 866303236}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &290143266
 MonoBehaviour:
@@ -4267,6 +4267,7 @@ GameObject:
   m_Component:
   - component: {fileID: 849341507}
   - component: {fileID: 849341506}
+  - component: {fileID: 849341508}
   m_Layer: 0
   m_Name: buttonjump
   m_TagString: Untagged
@@ -4332,13 +4333,27 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 849341505}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 7.19, y: -2.2824, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -593.81, y: -238.2824, z: 0}
   m_LocalScale: {x: 0.44297284, y: 0.37732878, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 98
+  m_Father: {fileID: 866303236}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &849341508
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 849341505}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 16cd34c7bd9928b4e9a474cfbc15a302, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Lompat: {fileID: 0}
+  Force: 0
 --- !u!1 &866303232
 GameObject:
   m_ObjectHideFlags: 0
@@ -4430,6 +4445,7 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children:
+  - {fileID: 849341507}
   - {fileID: 290143265}
   - {fileID: 203034178}
   m_Father: {fileID: 0}
@@ -8482,6 +8498,7 @@ GameObject:
   - component: {fileID: 2116269292}
   - component: {fileID: 2116269291}
   - component: {fileID: 2116269295}
+  - component: {fileID: 2116269296}
   m_Layer: 7
   m_Name: alton
   m_TagString: Untagged
@@ -8605,6 +8622,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   movementSpeed: 2
   jumpForce: 30
+--- !u!114 &2116269296
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2116269290}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 16cd34c7bd9928b4e9a474cfbc15a302, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Lompat: {fileID: 0}
+  Force: 0
 --- !u!1 &2135572131
 GameObject:
   m_ObjectHideFlags: 0
