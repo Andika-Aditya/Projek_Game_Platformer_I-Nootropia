@@ -7,6 +7,7 @@ public class PlayerController : MonoBehaviour
 
     [SerializeField] private float movementSpeed;
     [SerializeField] private float jumpForce;
+
     private bool isJumping;
     private bool isGrounded;
     private float horiz;
