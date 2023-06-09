@@ -11,6 +11,7 @@ public class PlayerController : MonoBehaviour
     private bool isJumping;
     private bool isGrounded;
     private float horiz;
+    public Joystick joystick;
 
     void Start()
     {
@@ -19,7 +20,7 @@ public class PlayerController : MonoBehaviour
 
     void Update()
     {
-        horiz = Input.GetAxisRaw("Horizontal");
+        horiz = joystick.Horizontal;
 
         if (Input.GetButtonDown("Jump") && !isJumping && isGrounded)
         {
