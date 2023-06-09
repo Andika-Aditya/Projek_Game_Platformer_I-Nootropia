@@ -7,6 +7,7 @@ public class PlayerController : MonoBehaviour
 
     [SerializeField] private float movementSpeed;
     [SerializeField] private float jumpForce;
+    public Joystick joystick;
 
     private bool isJumping;
     private bool isGrounded;
@@ -20,9 +21,12 @@ public class PlayerController : MonoBehaviour
 
     void Update()
     {
-        horiz = Input.GetAxis("Horizontal");
+        horiz = joystick.Horizontal;
+    }
 
-        if (Input.GetButtonDown("Jump") && !isJumping && isGrounded)
+    public void Jump()
+    {
+        if (!isJumping && isGrounded)
         {
             isJumping = true;
         }
