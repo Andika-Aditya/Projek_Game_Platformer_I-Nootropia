@@ -11,16 +11,16 @@ public class PlayerController : MonoBehaviour
     private bool isJumping;
     private bool isGrounded;
     private float horiz;
-    public Joystick joystick;
+
 
     void Start()
     {
-        rigidBody = GetComponent<Rigidbody2D>();;
+        rigidBody = GetComponent<Rigidbody2D>();
     }
 
     void Update()
     {
-        horiz = joystick.Horizontal;
+        horiz = Input.GetAxis("Horizontal");
 
         if (Input.GetButtonDown("Jump") && !isJumping && isGrounded)
         {
