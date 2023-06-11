@@ -1,5 +1,6 @@
 using System;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class PlayerController : MonoBehaviour
 {
@@ -7,12 +8,18 @@ public class PlayerController : MonoBehaviour
 
     [SerializeField] private float movementSpeed;
     [SerializeField] private float jumpForce;
-    public Joystick joystick;
+
+    private PlayerInputActions inputActions;
 
     private bool isJumping;
     private bool isGrounded;
     private float horiz;
 
+    private void Awake()
+    {
+        inputActions = new PlayerInputActions();
+        inputActions.Player.Movement.Enable();
+    }
 
     void Start()
     {
@@ -21,7 +28,7 @@ public class PlayerController : MonoBehaviour
 
     void Update()
     {
-        horiz = joystick.Horizontal;
+        horiz = inputActions.Player.Movement.ReadValue<float>();
     }
 
     public void Jump()
