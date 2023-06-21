@@ -52,9 +52,16 @@ public class PlayerController : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.CompareTag("Ground"))
+        if (collision.gameObject.CompareTag("Ground")|| collision.gameObject.CompareTag("Paper"))
         {
             isGrounded = true;
+        }
+
+        if (collision.gameObject.CompareTag("Paper") && !collision.gameObject.GetComponent<PaperClue>().Once)
+        {
+            InGameManager.Instance.Values.Add(collision.gameObject.GetComponent<PaperClue>().Value);
+            collision.gameObject.GetComponent<PaperClue>().Once = true;
+            InGameManager.Instance.Validation();
         }
     }
 
