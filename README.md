@@ -39,4 +39,4 @@ Testing the game’s displays: main menu, guide, environment, game over, pause, 
 
 <br/>
 
-All the features of the game **I-Nootropia** are working well, including the math challenge buttons, progress information during gameplay, and the display. Hopefully, this game can be improved further, especially in the environment and difficulty.
+All the features of the game **I-Nootropia** are working well, including the math challenge buttons, progress information during gameplay, and the display.
