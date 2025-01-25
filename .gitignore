@@ -11,7 +11,7 @@
 /[Uu]ser[Ss]ettings/
 
 # Ensure everything inside "The Game (Android App)" is included
-!/The Game (Android App)/**
+!/TheGame_AndroidApp/**
 
 
 # MemoryCaptures can get excessive in size.
