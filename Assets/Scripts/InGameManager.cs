@@ -18,7 +18,7 @@ public class InGameManager : MonoBehaviour
     [SerializeField] private List<string> values;
 
     private int valuesCount;
-    public Paperclue[] papers;
+    public PaperClue[] papers;
     public PlayerController playerController;
     public Switch _switch;
     public Switch _switch_2;
@@ -147,8 +147,8 @@ public class InGameManager : MonoBehaviour
 
     public void DeactiveText()
     {
-        papers = FindObjectsOfType(typeof(Paperclue)) as Paperclue[];
-        foreach (Paperclue paper in papers)
+        papers = FindObjectsOfType(typeof(PaperClue)) as PaperClue[];
+        foreach (PaperClue paper in papers)
         {
             paper.TextObj.gameObject.SetActive(true);
 

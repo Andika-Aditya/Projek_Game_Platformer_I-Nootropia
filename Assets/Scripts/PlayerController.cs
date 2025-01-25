@@ -20,7 +20,7 @@ public class PlayerController : MonoBehaviour
     private bool isGrounded;
     private float horiz;
 
-    public Paperclue[] papers;
+    public PaperClue[] papers;
 
     public Button _buttonAbility;
     private bool haflCD;
@@ -89,8 +89,8 @@ public class PlayerController : MonoBehaviour
         respawnPoint = transform.position;
 
 
-        papers = FindObjectsOfType(typeof(Paperclue)) as Paperclue[];
-        foreach (Paperclue paper in papers)
+        papers = FindObjectsOfType(typeof(PaperClue)) as PaperClue[];
+        foreach (PaperClue paper in papers)
         {
             paper.TextObj.gameObject.SetActive(false);
 
@@ -109,8 +109,8 @@ public class PlayerController : MonoBehaviour
             {
                 haflCD = false;
                 _buttonAbility.interactable = true;
-                papers = FindObjectsOfType(typeof(Paperclue)) as Paperclue[];
-                foreach (Paperclue paper in papers)
+                papers = FindObjectsOfType(typeof(PaperClue)) as PaperClue[];
+                foreach (PaperClue paper in papers)
                 {
                     paper.TextObj.gameObject.SetActive(false);
 
@@ -206,7 +206,7 @@ public class PlayerController : MonoBehaviour
             if (collision.gameObject.CompareTag("PaperClue"))
             {
                 collectSoundEffect.Play();
-                InGameManager.Instance.Values.Add(collision.gameObject.GetComponent<Paperclue>().Value);
+                InGameManager.Instance.Values.Add(collision.gameObject.GetComponent<PaperClue>().Value);
                 InGameManager.Instance.Validation(_Level);
                 collision.gameObject.SetActive(false);
             }else if (collision.gameObject.CompareTag("NextCL"))
@@ -219,7 +219,7 @@ public class PlayerController : MonoBehaviour
             if (collision.gameObject.CompareTag("PaperClue"))
             {
                 collectSoundEffect.Play();
-                InGameManager.Instance.Values.Add(collision.gameObject.GetComponent<Paperclue>().Value);
+                InGameManager.Instance.Values.Add(collision.gameObject.GetComponent<PaperClue>().Value);
                 InGameManager.Instance.Validation(_Level);
                 collision.gameObject.SetActive(false);
             }else if (collision.gameObject.CompareTag("NextCL"))
@@ -233,7 +233,7 @@ public class PlayerController : MonoBehaviour
             if (collision.gameObject.CompareTag("PaperClue"))
             {
                 collectSoundEffect.Play();
-                InGameManager.Instance.Values.Add(collision.gameObject.GetComponent<Paperclue>().Value);
+                InGameManager.Instance.Values.Add(collision.gameObject.GetComponent<PaperClue>().Value);
                 InGameManager.Instance.Validation(_Level);
                 collision.gameObject.SetActive(false);
             }
@@ -243,7 +243,7 @@ public class PlayerController : MonoBehaviour
             if (collision.gameObject.CompareTag("PaperClue"))
             {
                 collectSoundEffect.Play();
-                InGameManager.Instance.Values.Add(collision.gameObject.GetComponent<Paperclue>().Value);
+                InGameManager.Instance.Values.Add(collision.gameObject.GetComponent<PaperClue>().Value);
                 InGameManager.Instance.Validation(_Level);
                 collision.gameObject.SetActive(false);
             }
@@ -253,7 +253,7 @@ public class PlayerController : MonoBehaviour
             if (collision.gameObject.CompareTag("PaperClue"))
             {
                 collectSoundEffect.Play();
-                InGameManager.Instance.Values.Add(collision.gameObject.GetComponent<Paperclue>().Value);
+                InGameManager.Instance.Values.Add(collision.gameObject.GetComponent<PaperClue>().Value);
                 InGameManager.Instance.Validation(_Level);
                 collision.gameObject.SetActive(false);
             }

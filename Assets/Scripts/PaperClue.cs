@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 
-public class Paperclue : MonoBehaviour
+public class PaperClue : MonoBehaviour
 {
     [SerializeField] private string value;
     [SerializeField] private TextMeshProUGUI textValue;
