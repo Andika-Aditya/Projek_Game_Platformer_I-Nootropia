@@ -10,9 +10,6 @@
 /[Ll]ogs/
 /[Uu]ser[Ss]ettings/
 
-# Ensure everything inside "The Game (Android App)" is included
-!/TheGame_AndroidApp/**
-
 
 # MemoryCaptures can get excessive in size.
 # They also could contain extremely sensitive data
