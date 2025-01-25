@@ -10,8 +10,10 @@
 /[Ll]ogs/
 /[Uu]ser[Ss]ettings/
 
-# Ensure everything inside "The Game (Android App)" is included
+# Include "TheGame_AndroidApp" folder
+!/TheGame_AndroidApp/
 !/TheGame_AndroidApp/**
+
 
 # MemoryCaptures can get excessive in size.
 # They also could contain extremely sensitive data
