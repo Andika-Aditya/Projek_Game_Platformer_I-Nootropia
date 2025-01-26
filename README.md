@@ -12,9 +12,9 @@ On this development game, **Multimedia Development Life Cycle** is used for the 
  <center><img src="Assets/Game_Overview/MDLC.png" height="250px"></center>
 <br/>
 
- Based on that picture the steps is only until **Testing** , which is:
- 
- **1. Concept**  
+Based on that picture the steps is only until **Testing** , which is:
+
+**1. Concept**  
 Observing the STT Wastukancana campus to create a fun and productive game concept.
 
 **2. Material Collecting**  
@@ -30,12 +30,13 @@ The game is built using Unity to allow interaction with users from various group
 Testing the game’s displays: main menu, guide, environment, game over, pause, and finish.
 
 ## Game Overview
-<img src="Assets/Game_Overview/mainmenu.png" height="250px">
-<img src="Assets/Game_Overview/guide.png" height="250px">
-<img src="Assets/Game_Overview/gamestart.png" height="250px">
-<img src="Assets/Game_Overview/gameover.png" height="250px">
-<img src="Assets/Game_Overview/pause.png" height="250px">
-<img src="Assets/Game_Overview/finish.png" height="250px">
+
+<img src="Assets/Game_Overview/mainmenu.png" height="210px">
+<img src="Assets/Game_Overview/guide.gif" height="250px">
+<img src="Assets/Game_Overview/clue.gif" height="250px">
+<img src="Assets/Game_Overview/openanswer.gif" height="250px">
+<img src="Assets/Game_Overview/gameover.png" height="210px">
+<img src="Assets/Game_Overview/pause.png" height="210px">
 
 <br/>
 
